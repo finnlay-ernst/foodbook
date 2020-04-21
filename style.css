@@ -1,0 +1,77 @@
+:root {
+    font-size: 16;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --color1: #f5cb5cff;
+    --color2: #f1faeeff;
+    --color3: #3e92ccff;
+    --color4: #2a628fff;
+    --color4-highlight: rgb(31, 70, 102);
+    --color5: #16324fff;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--color4);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--color5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--color2);
+    background-color: var(--color3);
+}
+
+.holder {
+    position: fixed;
+    width: 100%;
+    height: 3.5rem;
+}
+#spacer{
+    height: 3.5rem;
+}
+
+#header {
+    width: 100%;
+    height: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    color: var(--color1);
+    background-color: var(--color5);
+}
+.menu-container {
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--color4);
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+.menu-item {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.menu-item:hover{
+    background-color: var(--color4-highlight);
+}
+
+#container {
+    padding: 10px;
+    padding-top: 0px;
+}
+p:first-child{
+    margin-top: 0px;
+}
