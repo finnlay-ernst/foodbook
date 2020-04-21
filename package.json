@@ -1,0 +1,13 @@
+{
+  "name": "foodbook",
+  "version": "1.0.0",
+  "description": "App for logging food",
+  "main": "app.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Finnlay Ernst",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
