@@ -26,55 +26,47 @@ body {
     color: var(--color2);
     background-color: var(--color3);
 }
-
-.holder {
-    position: fixed;
-    width: 100%;
-    height: 3.5rem;
-}
-#spacer {
-    height: 3.5rem;
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2rem auto;
 }
 
-#header {
-    width: 100%;
-    height: 2rem;       
+.title {
+    width: 100%;   
     background-color: var(--color5);
 }
-#header .material-icons, span {
+.title .material-icons, .title span {
     text-align: left;    
     font-size: 1.5rem;
     color: var(--color1);
     vertical-align: middle;
 }
-#header .material-icons {
+.title .material-icons {
     padding-left: 10px; 
     padding-bottom: 0.2rem;
 }
 
 .menu-container {
-    width: 100%;
-    height: 1.5rem;
-    background-color: var(--color4);
+    background-color: var(--color5);
 }
 .menu {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    height: 100%;
-    align-items: center;
+    width: 100%;
+    height: 2rem;  
+    align-items: center;  
 }
 .menu-item {
+    width: 80%;
     text-align: center;
-    height: 100%;
-    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 80%;
 }
 .menu-item:hover{
     background-color: var(--color4-highlight);
-}
-
-#container {
-    padding: 10px;
 }
