@@ -72,6 +72,7 @@ body {
 }
 .menu-item:hover{
     background-color: var(--color4-highlight);
+    color: var(--color1);
     border-radius: 0.2rem;
 }
 
