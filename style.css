@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 26px;
     font-family: 'Roboto', sans-serif;
     --color1: #f5cb5cff;
     --color2: #f1faeeff;
@@ -29,7 +29,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2rem auto;
+    grid-template-rows: 2rem 80vh;
 }
 
 .title {
@@ -79,6 +79,39 @@ body {
 .content {
     grid-column: 1 / 3;
     grid-row: 2 / 2;
+    margin: 1rem;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: repeat(5, 1fr);
+}
+
+.serving-info {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+}
+.calorie-info {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+
+}
+.button-container{
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+    margin-top: 1rem;
+}
+#logFood {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: var(--color2);
+    background-color: var(--color4);
+    border-color: grey;
+}
+#logFood:hover {
+    border-radius: 1rem;
+    color: var(--color2);
+    background-color: var(--color4-highlight);
 }
 
 .recent-activity {
