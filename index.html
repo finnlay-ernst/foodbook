@@ -22,37 +22,33 @@
                 <li class="menu-item"><i class="material-icons">meeting_room</i></li>
             </ul>
         </div>
-        <div class="content">
-            <span>
-                Select a supported food:
-                <label class="selected-food"><input list="foods" id="selectedFood" /></label>
-            </span>
-            <datalist id="foods">
-                <option value="Apple"></option>   
-                <option value="Chicken"></option>   
-                <option value="Eggs"></option>                      
-            </datalist>
-
-            <span class="serving-info">
-                Manually enter serving size:
-                <input type="checkbox">                
-                <br>
-                Serving size for selected item:
-                <output id=servingSize>250g</output>
-            </span>
-
-            <span>
-                Enter # of servings:
-                <label class="selected-servings"><input id="selectedServings" /></label>
-            </span>
-
-            <span class="calorie-info">
-                Calories for selection:
-                <output id="calories">1000kJ</output>        
-            </span>
-            <span class="button-container">
-                <button id="logFood">Add Food to Log</button>
-            </span>
+        <div class="content-container">
+            <div class="content">
+                <h2 id="contentTitle">Add Food to Log</h2>
+                <div id=selectedFoodContainer>
+                    <input id="selectedFood" placeholder="Enter supported food"></input>
+                </div>
+                <div id=selectedServingsContainer>
+                    <input id="selectedServings" placeholder="Enter # of servings"></input>
+                </div>
+                <div id="servingSizeContainer">
+                    Serving size for selected item: <output id=servingSize>250g</output>
+                </div>
+                <div id="checkManualContainer">
+                    Manually enter serving size: <input type="checkbox">    
+                </div>
+                <div id="manualServingContainer">
+                    <input id="manualServing" placeholder="Enter serving size (grams)" disabled=true></input>  
+                </div>
+                
+                <div id="selectionCaloriesContainer">
+                    Calories for selection:
+                    <output id="selectionCalories">1000kJ</output>        
+                </div>
+                <div id="logFoodContainer">
+                    <button id="logFood">Log Food!</button>
+                </div>
+            </div>
         </div>
         <div class="recent-activity">
             <span>Recent logs go here</span>
